@@ -1,0 +1,21 @@
+[package]
+name = "workflow-recovery-policy"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+license = "MIT"
+description = "Side-effect-free policy for classifying workflow and task-attempt recovery evidence"
+readme = "README.md"
+repository = "https://github.com/nplongx/workflow-recovery-policy"
+keywords = ["workflow", "recovery", "leases", "idempotency"]
+categories = ["algorithms", "data-structures"]
+
+[dependencies]
+serde = { version = "=1.0.228", features = ["derive"] }
+
+[lints.rust]
+unsafe_code = "forbid"
+missing_docs = "warn"
+
+[lints.clippy]
+all = "warn"
