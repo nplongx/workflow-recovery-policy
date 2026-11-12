@@ -4,6 +4,10 @@ A side-effect-free Rust library for classifying workflow and task-attempt recove
 
 It helps a host distinguish **owned**, **unresolved**, **no known owner**, and **unknown** states without treating missing metadata or failed observations as proof that execution has stopped.
 
+## Terminology
+
+See [TERMINOLOGY.md](TERMINOLOGY.md) for shared identifier, lifecycle, evidence, time-unit, and compatibility conventions.
+
 ## What it provides
 
 - `RecoveryManager::classify_attempt`: classify one exact task attempt from explicit lease, runtime-session, and provider observations;
