@@ -4,6 +4,15 @@ A side-effect-free Rust library for classifying workflow and task-attempt recove
 
 It helps a host distinguish **owned**, **unresolved**, **no known owner**, and **unknown** states without treating missing metadata or failed observations as proof that execution has stopped.
 
+## Install
+
+```toml
+[dependencies]
+workflow-recovery-policy = { git = "https://github.com/nplongx/workflow-recovery-policy", tag = "v0.1.0" }
+```
+
+This repository contains the complete policy implementation and has no sibling-package dependency.
+
 ## Terminology
 
 See [TERMINOLOGY.md](TERMINOLOGY.md) for shared identifier, lifecycle, evidence, time-unit, and compatibility conventions.
@@ -45,7 +54,7 @@ Passing these tests does not establish production integration, runtime inventory
 
 ## Source lineage
 
-Extracted from `runalith-recovery` in [`nplongx/runalith`](https://github.com/nplongx/runalith), source revision `29c24cfa2b6ead5704d26cf2746bc384f2938b80`. The extracted Rust source is retained unchanged; this repository supplies independent package metadata, documentation, and CI.
+Created from immutable source snapshot `29c24cfa2b6ead5704d26cf2746bc384f2938b80`. The implementation contains pure recovery-policy evaluation and does not import a workflow host, runtime, or sibling package.
 
 ## License
 
